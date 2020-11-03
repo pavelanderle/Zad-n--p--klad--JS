@@ -21,7 +21,8 @@
         function displayTime() {
             var offsetTime = parseInt(document.getElementById("country").value);
             var d = new Date();
-            var actualTime=(d.getUTCHours()+offsetTime)+":"+d.getUTCMinutes()+":"+d.getUTCSeconds();
+            var timeByTimeZone= (d.getUTCHours()+offsetTime)>24?d.getUTCHours()+offsetTime-23:d.getUTCHours()+offsetTime;
+            var actualTime=timeByTimeZone+":"+d.getUTCMinutes()+":"+d.getUTCSeconds();
             document.getElementById("actualTime").innerHTML=actualTime;
         }
     </script>
