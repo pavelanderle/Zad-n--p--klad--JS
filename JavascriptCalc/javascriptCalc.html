@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- My JS -->
+    <script src="jscalc.js"></script>
+
+    <title>JavaScript Calc</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Javascript project</h1>
+            <p class="lead">Students project by VOŠ a SPŠE Plzeň - Name</p>
+        </div>
+        <div class="calc">
+            
+            <div class="row">
+                <input class="col" type="text" id="display" value="0">
+            </div>
+            <div class="keyboard">
+                <div class="row">
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key7">7</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key8">8</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key9">9</button>
+                    <button class="col btn btn-light" id="keydiv">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key4">4</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key5">5</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key5">6</button>
+                    <button class="col btn btn-light" id="keymulti">*</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key1">1</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key2">2</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key3">3</button>
+                    <button class="col btn btn-light" id="keyminus">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="key0">0</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="keydecimal">.</button>
+                    <button onclick="displayKey(this);" class="col btn btn-light" id="keyenter">=</button>
+                    <button class="col btn btn-light" id="keyplus">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

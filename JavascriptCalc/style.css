@@ -1,0 +1,22 @@
+@font-face {
+    font-family: displayFont;
+    src: url(BigShouldersStencilText-ExtraBold.ttf);
+  }
+
+.calc{
+    max-width: 400px;
+    margin: auto;
+}
+
+h1, .lead{
+    text-align: center;
+}
+
+#display{
+    background-color: black;
+    color: chartreuse;
+    font-family: displayFont;
+    font-size: 35px;
+    height: 50px;
+    text-align: right;
+}
